@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --light-color: #EFEFEF;
+    --dark-color: #535971;
+    --border-color: #E6E6F0;
+    --detail-color: #FF5374;
+}
+
+h1,
+legend,
+h3,
+button {
+    font-family: 'Staatliches', sans-serif;
+}
+
+label,
+input {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--light-color);
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 436px;
+    background-color: var(--dark-color);
+}
+
+.page {
+    max-width: 750px;
+    margin: 0 auto;
+    padding-top: 140px;
+    margin-bottom: 366px;
+}
+
+header {
+    width: 417px;
+}
+
+header h1 {
+    font-size: 48px;
+    line-height: 60px;
+    color: white;
+    margin-bottom: 18px;
+}
+
+header p {
+    font-size: 20px;
+    line-height: 30px;
+    color: white;
+    margin-bottom: 58px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 64px;
+    background-color: white;
+    border-radius: 20px 20px 0 0;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border: none;
+}
+
+fieldset legend {
+    font-size: 24px;
+    line-height: 34px;
+    color: var(--dark-color);
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--light-color);
+    margin-bottom: 36px;
+    width: 100%;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.input-wrapper label {
+    font-size: 14px;
+    line-height: 24px;
+    color: #4E4958;
+}
+
+.input-wrapper label span {
+    font-size: 12px;
+    line-height: 20px;
+    color: #C1BCCC;
+}
+
+.input-wrapper label:hover span {
+    color: #74727a;
+}
+
+.input-wrapper input {
+    height: 56px;
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+    background-color: #FAFAFC;
+    padding: 0 20px;
+    color: var(--dark-color);
+}
+
+.datetime-wrapper h3 {
+    font-size: 20px;
+    line-height: 34px;
+    margin-bottom: 8px;
+    color: var(--dark-color);
+}
+
+.datetime-wrapper:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.col-2,
+.col-3 {
+    display: flex;
+    gap: 32px;
+}
+
+.col-3 > :not(:nth-child(1)) {
+    flex-basis: 50%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--dark-color);
+    border-radius: 0 0 20px 20px;
+    padding: 0 64px;
+    height: 160px;
+}
+
+footer .button {
+    border-radius: 20px;
+    height: 56px;
+    background-color: var(--detail-color);
+    font-size: 20px;
+    line-height: 26px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+footer .button:hover {
+    background-color: #e04968;
+}
